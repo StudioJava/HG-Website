@@ -16,12 +16,21 @@
 <div class="container-fluid">
   <div class="row text-white">
     <div class="col-12">
-      <h1 class="font-1 pt-3">Welcome</h1>
+      
     </div>
-    <div class="col-12 mb-5">
+    <div class="col-12 mb-5 animateme scrollme"
+		 
+		 data-when="exit"
+				data-from="0"
+				data-to="0.75"
+				data-opacity="0"
+				data-translatey="300"
+		 >
+		<h1 class="font-1 pt-3 ">Welcome</h1>
       <p class="font-weight-light">My name is Harold Gonzales, I am a Matrix Educator residing in the beautiful city of Calgary. Being able to share the stage with the same stylist and barbers that I grew up inspiring to be like, is a blessing. There's a sense of achievement when your inspirational leaders are now learning of you and asking you questions. The path to success is to love what you do, be humble and share the creativity with others.</p>
     </div>
-    <div class="col-12"> <img src="images/harold_gonzales.png" alt="" class="img-fluid rounded-top mt-2">
+    <div
+		 class="col-12"> <img src="images/harold_gonzales.png" alt="" class="img-fluid rounded-top mt-2">
       <div class="fx-1 w-50 font-2 ">
         <p>Artistic<br>
           Creative<br>
@@ -217,5 +226,8 @@ let's talk about your hair!!</p>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.0.0.js"></script>
+	<script src="jsAnimation/prefixfree.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	  <script src="jsAnimation/jquery.scrollme.js"></script>
 </body>
 </html>
