@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+	  <link rel="stylesheet" href="CSS page 5/examples.css">
+	   
+	<script>
+	// init controller
+	var controller = new ScrollMagic.Controller();
+</script>
+  </head>
+  <body>
+  	<!-- body code goes here -->
+<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aliquid repudiandae iure hic repellat nisi possimus velit totam laborum facilis. Architecto beatae at dolorum qui praesentium reiciendis magni cupiditate quos aut officiis vitae voluptas, similique nisi perspiciatis, excepturi, facere pariatur. Unde asperiores facilis distinctio quis quia cum nobis minima mollitia quibusdam nam tempora tenetur impedit deleniti rem, iusto eum libero! Eveniet sit minus eaque quae iusto, hic beatae illum laboriosam libero voluptas quasi quam molestias quis nihil officiis perspiciatis quisquam fuga. Quam laborum enim nesciunt exercitationem sint, assumenda? Ipsum, blanditiis provident sit, quibusdam reiciendis nesciunt assumenda totam ex ab labore cumque quos qui, dolorem porro hic inventore magnam incidunt nobis nulla. Itaque porro quis consequuntur recusandae dignissimos ad praesentium iusto. Quasi sed nisi quam saepe distinctio deserunt iste nihil cupiditate suscipit, quod, perspiciatis magni quibusdam. Ex iure eius, dolor ullam ducimus culpa placeat quisquam laudantium quo! Modi facere harum ea voluptatibus qui saepe quod perferendis sed expedita, provident maxime veniam dignissimos, doloribus laborum dicta ducimus illum quasi repellat accusantium eligendi distinctio. Consequuntur amet maxime perspiciatis, numquam ipsa enim quae sunt iste, expedita praesentium labore nemo ab provident nulla minima, est ullam molestiae consequatur! Eum quod soluta labore dignissimos, quae, iure veniam odio illum praesentium ipsa placeat ea saepe in, officia repellendus molestiae molestias earum culpa error eaque alias cumque! Voluptatum iure modi incidunt aliquam fugiat dolore sapiente dolorum quisquam placeat ab, ut obcaecati consequatur quod, quo illum molestiae iste minima nulla! Illum, repellendus architecto natus? Magni fugit exercitationem saepe voluptas commodi accusamus aspernatur eveniet sequi unde doloribus, ratione corrupti, amet ipsa? Obcaecati porro ipsa, quod voluptas vero, ipsum veniam numquam illum quaerat placeat ex necessitatibus odit, asperiores minus! Non doloribus delectus reiciendis, omnis fuga, itaque tenetur nam. Quod debitis mollitia sequi rem molestiae, distinctio voluptate, quo veniam, alias earum quia?</p></div>	  
+<div class="spacer s2"></div>
+<div id="trigger1" class="spacer s0"></div>
+<div id="animate1" class="box2 skin">
+	<p>You wouldn't like me, when I'm angry!</p>
+	<a href="#" class="viewsource">view source</a>
+</div>
+<div class="spacer s2"></div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.0.0.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	  
+  <script>
+		// build scene
+		var scene = new ScrollMagic.Scene({
+							triggerElement: "#trigger1"
+						})
+						.setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
+						.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+						.addTo(controller);
+</script>
+  </body>
+</html>

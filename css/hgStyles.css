@@ -17,9 +17,13 @@
 	color: #FA6800;
 
 }
-body {
+html, body {
 	background-color: #18162E;
-	
+	position: relative;
+}
+section {
+	position: relative;
+	overflow: hidden;
 }
 h2, h3 {
 	
